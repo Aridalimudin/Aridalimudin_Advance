@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GmapsActivity"
+    android:background="@drawable/backgroud">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="GOOGLE MAPS"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/R_txt_1"/>
+
+    <ImageView
+        android:id="@+id/gmaps"
+        android:layout_width="205dp"
+        android:layout_height="176dp"
+        android:layout_below="@+id/R_txt_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gmaps" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gmaps"
+        android:text="Silahkan input lokasi anda serta lokasi yang akan anda tuju"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:id="@+id/R_txt_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/R_txt_2"
+        android:padding="30dp"
+
+        android:id="@+id/maps1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/btn"
+            android:hint="Masukan Lokasi Anda"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/teal_200"
+            android:id="@+id/lokasi"
+            android:fontFamily="@font/poppinsregular"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/btn"
+            android:layout_marginTop="10dp"
+            android:hint="Masukan Lokasi Tujuan"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/teal_200"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/tujuan"/>
+
+        <Button
+            android:id="@+id/maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:width="300dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="BUKA GOOGLE MAPS"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>
